@@ -30,5 +30,6 @@ int main(int argc, char **argv)
   c=calloc(clen, 1);
   for(int i=0; i<1000000; i++)
     crypto_aed_encrypt(c, &clen, m, mlen, NULL, 0, NULL, n, k);
+  printf("Encrypted %lld bytes\n", 10000000*mlen);
   exit(0);
 }

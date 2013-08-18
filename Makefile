@@ -1,4 +1,4 @@
-CC= clang-mp-3.2 -march=core2 -g
+CC= clang-mp-3.2 -march=core2 -fslp-vectorize-aggressive
 CFLAGS=-std=c99 -O3  -Wall -Wextra -emit-llvm
 all: time test test_crypt time_crypt
 .PHONY: all
